@@ -44,7 +44,7 @@ function renderPubItem(row) {
   const doiLink = doi
     ? ` &middot; DOI: <a href="https://doi.org/${escapeHtml(doi)}" target="_blank" rel="noopener">${escapeHtml(doi)}</a>`
     : "";
-  const file = row.File ? row.File.trim() : "";
+  const file = (row.File || row.file || "").trim();
   const fileLink = file
     ? ` &middot; <a href="${escapeHtml(file)}" target="_blank" rel="noopener">Unduh PDF</a>`
     : "";
