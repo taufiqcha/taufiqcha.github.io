@@ -349,6 +349,19 @@ h2 {
 
 .pub-list-compact li.data-loading { display: block; }
 
+.pub-list-compact li.pub-group {
+  display: block;
+  border-bottom: none;
+  padding: 1.1rem 0 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.pub-list-compact li.pub-group:first-child { padding-top: 0; }
+
 .pub-list-compact li:last-child { border-bottom: none; }
 
 .pub-list-compact a { color: var(--accent); text-decoration: none; }

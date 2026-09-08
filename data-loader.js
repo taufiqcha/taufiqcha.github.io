@@ -30,8 +30,15 @@ function loadPublikasi() {
       const utama = rows.filter(r => (r.Utama || "").toLowerCase().startsWith("y"));
       const lainnya = rows.filter(r => !(r.Utama || "").toLowerCase().startsWith("y"));
 
+      const jurnal = utama.filter(r => (r.Jenis || "").toLowerCase().startsWith("j"));
+      const konferensi = utama.filter(r => !(r.Jenis || "").toLowerCase().startsWith("j"));
+
+      const grup = (label, daftar) => daftar.length
+        ? `<li class="pub-group">${label}</li>` + daftar.map(renderPubItem).join("")
+        : "";
+
       utamaEl.innerHTML = utama.length
-        ? utama.map(renderPubItem).join("")
+        ? grup("Jurnal", jurnal) + grup("Konferensi", konferensi)
         : `<li class="data-loading">Belum ada data publikasi.</li>`;
 
       if (lainnya.length) {
