@@ -16,16 +16,20 @@ fetch(SHEETS_CONFIG.publikasi)
   })
   .then(text => {
     const rows = parseCSV(text).sort((a, b) => (b.Tahun || "").localeCompare(a.Tahun || ""));
-    const jurnal = rows.filter(r => (r.Jenis || "").toLowerCase().startsWith("j"));
-    const konferensi = rows.filter(r => !(r.Jenis || "").toLowerCase().startsWith("j"));
+    const pilihan = rows.filter(r => (r.Utama || "").toLowerCase().startsWith("y"));
+    const jurnal = pilihan.filter(r => (r.Jenis || "").toLowerCase().startsWith("j"));
+    const konferensi = pilihan.filter(r => !(r.Jenis || "").toLowerCase().startsWith("j"));
 
     const grup = (label, daftar) => daftar.length
-      ? `<h3 class="cv-subhead">${label} <span class="cv-count">(${daftar.length})</span></h3>
+      ? `<h3 class="cv-subhead">${label}</h3>
          <ol class="cv-pub">${daftar.map(renderCvPub).join("")}</ol>`
       : "";
 
+    const catatan = `<p class="cv-note">Daftar lengkap ${rows.length} publikasi beserta sitasinya tersedia di
+      <a href="https://scholar.google.com/citations?user=u_Vo0gsAAAAJ&hl=id&oi=ao">Google Scholar</a>.</p>`;
+
     document.getElementById("cv-pub-groups").innerHTML =
-      grup("Jurnal", jurnal) + grup("Konferensi", konferensi);
+      grup("Jurnal", jurnal) + grup("Konferensi", konferensi) + catatan;
   })
   .catch(err => {
     document.getElementById("cv-pub-groups").innerHTML =

@@ -170,6 +170,10 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
 
 .cv-cols { columns: 2; column-gap: 8mm; break-inside: avoid; }
 
+.cv-flat { margin: 0; padding-left: 5mm; }
+.cv-flat li { font-size: 9pt; color: var(--cv-dim); margin-bottom: 0.6mm; }
+.cv-flat strong { color: var(--cv-text); }
+
 .cv-subhead {
   font-size: 9.5pt;
   font-weight: 700;
@@ -194,6 +198,14 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
 
 .cv-loading { color: var(--cv-dim); font-style: italic; }
 
+.cv-note {
+  font-size: 8.5pt;
+  color: var(--cv-dim);
+  margin-top: 1.8mm;
+}
+
+.cv-note a { color: var(--cv-navy); }
+
 @media (max-width: 230mm) {
   body { padding: 1rem 0.5rem 2rem; }
   .toolbar { max-width: 100%; }
@@ -203,11 +215,11 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
 
 @page {
   size: A4;
-  margin: 12mm 14mm;
+  margin: 10mm 13mm;
 }
 
 @media print {
-  body { background: #fff; padding: 0; font-size: 9.5pt; }
+  body { background: #fff; padding: 0; font-size: 9pt; line-height: 1.35; }
   .toolbar { display: none; }
   .sheet {
     width: auto;
@@ -216,8 +228,9 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
     padding: 0;
     box-shadow: none;
   }
-  .cv-section { break-inside: auto; }
-  .cv-section > h2 { break-after: avoid; }
-  .cv-subhead { break-after: avoid; }
+  .cv-section { break-inside: auto; margin-bottom: 2.8mm; }
+  .cv-section > h2 { break-after: avoid; margin-bottom: 2mm; }
+  .cv-subhead { break-after: avoid; margin: 2mm 0 0.9mm; }
+  .cv-entry { margin-bottom: 1.5mm; }
   a { text-decoration: none; color: var(--cv-navy); }
 }
