@@ -1,24 +1,24 @@
-Tahun,Judul,Venue,Jenis,DOI,Utama,file
-2026,Detecting water contaminants using an electrochemical sensor based on improved Transformer Encoder with Genetic Algorithm,Journal of Water Process Engineering,Jurnal,10.1016/j.jwpe.2026.110111,Ya,
-2026,Cross-Attention Feature Fusion network for robust estimation of Cd2+ and Pb2+ in water samples using Cyclic Voltammetry,Chemical Engineering Journal Advances,Jurnal,10.1016/j.ceja.2026.101065,Ya,paper/cross-attention-cd-pb-2026.pdf
-2026,Synthetic noise injection asymmetrically affects machine-learning quantification of Cd2+ and Pb2+ in multi-scan cyclic voltammetry,Chemical Engineering Journal Advances,Jurnal,10.1016/j.ceja.2026.101356,Tidak,
-2026,Machine Learning Prediction of Light Intensity and Aeration Treatment for Microalgae-Based POME Remediation with Edge Inference Evaluation,IAICT 2026,Konferensi,10.1109/IAICT71158.2026.11620915,Tidak,
-2026,A Lightweight Heterogeneous Data Framing Protocol for Real-Time Image and Sensor Transmission in Drone-Based Mobile IoT Systems,ICSMech 2026,Konferensi,10.1109/ICSMech69390.2026.11647136,Tidak,
-2025,Augmented Data Low Confidence (ADLC): A Confidence-Driven Data Augmentation Framework With Ensemble Optimization,IEEE Access,Jurnal,10.1109/ACCESS.2025.3636729,Ya,paper/adlc-2025.pdf
-2025,Metaheuristic Optimized Machine Learning for Real Time Ammonia Prediction in IoT Based POME Bioremediation Systems,BTS-I2C 2025,Konferensi,10.1109/BTS-I2C67944.2025.11399329,Tidak,paper/metaheuristic-ammonia-pome-2025.pdf
-2025,ADASYN-GRU Approach for Enhanced Detection of Heavy Metals in Water Using Electrochemical Sensors,ICoCSETI 2025,Konferensi,10.1109/ICoCSETI63724.2025.11018884,Ya,paper/adasyn-gru-heavy-metals-2025.pdf
-2025,Machine Learning-Based COD Prediction Enhancement in Microalgae Cultivation with POME Using Imputation Techniques,BTS-I2C 2025,Konferensi,10.1109/BTS-I2C67944.2025.11399363,Tidak,paper/cod-prediction-microalgae-pome-2025.pdf
-2025,Analysis of Pollutant Exposure and Toxicological Risk in Aquatic Species Using Knowledge Graphs with Louvain Community Detection,BTS-I2C 2025,Konferensi,10.1109/BTS-I2C67944.2025.11399323,Tidak,
-2025,Enhancing Machine Learning Classification of Cadmium and Lead Using DWT Adaptive Filter Based Artifact Reduction,ICAITech 2025,Konferensi,10.1109/ICAITech66481.2025.11387248,Tidak,paper/dwt-adaptive-filter-cd-pb-2025.pdf
-2025,Voltammetry Data for Aquatic Pollutants Detection,"ICoCSETI, Jakarta - Pembicara",Konferensi,10.1109/ICoCSETI63724.2025.11019150,Tidak,paper/voltammetry-dimensionality-reduction-2025.pdf
-2025,Water Quality Sensor Noise Classification based on Drone Movement,"ICoCSETI, Jakarta",Konferensi,10.1109/ICoCSETI63724.2025.11019111,Tidak,paper/water-quality-sensor-noise-drone-2025.pdf
-2025,Integrating Potentiostat Measurements and Ensemble Learning,"IES, Surabaya",Konferensi,10.1109/IES67184.2025.11161184,Tidak,paper/potentiostat-ensemble-learning-2025.pdf
-2024,Clustering Sensor Array - Palm Oil VOC,"ICITEE, Bali - Pembicara",Konferensi,10.1109/ICITEE62483.2024.10808827,Ya,paper/clustering-sensor-array-palm-oil-2024.pdf
-2024,Classification-Based Authentication of Cooking Oil Using Electronic Nose,"BTS-I2C, Jember",Konferensi,10.1109/BTS-I2C63534.2024.10941862,Tidak,paper/cooking-oil-authentication-enose-2024.pdf
-2024,Optimizing Heavy Metal Detection - DNN + GMM,"BTS-I2C, Jember",Konferensi,10.1109/BTS-I2C63534.2024.10941846,Tidak,paper/dnn-gmm-heavy-metal-2024.pdf
-2024,Deep Neural Network (DNN) for Outlier Detection in Heavy Metal Voltammetric Data,"BTS-I2C, Jember",Konferensi,10.1109/BTS-I2C63534.2024.10942294,Tidak,paper/dnn-outlier-heavy-metal-2024.pdf
-2024,Lead (Pb) Contaminant Measurement on Distilled Water Using Hybrid Sensors and Linear Regression,"BTS-I2C, Jember",Konferensi,10.1109/BTS-I2C63534.2024.10942213,Tidak,paper/lead-contaminant-hybrid-sensors-2024.pdf
-2023,K-means Feature Selection for Agile User Stories,ICMERALDA - Pembicara,Konferensi,10.1109/ICMERALDA60125.2023.10458165,Tidak,
-2023,Filter Validation - Photoplethysmograph Outliers,"ICAIIC, Bali - Pembicara",Konferensi,10.1109/ICAIIC57133.2023.10067110,Ya,paper/filter-validation-ppg-outliers-2023.pdf
-2023,Feature Selection of Photoplethysmograph Data in Machine Learning,"ICAIIC, Bali",Konferensi,10.1109/ICAIIC57133.2023.10067116,Tidak,paper/feature-selection-ppg-2023.pdf
-2023,Clustering of Photoplethysmography Data Signals for Developing Noise Filters,"ICAIIC, Bali",Konferensi,10.1109/ICAIIC57133.2023.10066966,Tidak,paper/clustering-ppg-noise-filter-2023.pdf
+Tahun,Judul,Venue,Jenis,Peran,DOI,Utama,file
+2026,Detecting water contaminants using an electrochemical sensor based on improved Transformer Encoder with Genetic Algorithm,Journal of Water Process Engineering,Jurnal,,10.1016/j.jwpe.2026.110111,Ya,
+2026,Cross-Attention Feature Fusion network for robust estimation of Cd2+ and Pb2+ in water samples using Cyclic Voltammetry,Chemical Engineering Journal Advances,Jurnal,,10.1016/j.ceja.2026.101065,Ya,paper/cross-attention-cd-pb-2026.pdf
+2026,Synthetic noise injection asymmetrically affects machine-learning quantification of Cd2+ and Pb2+ in multi-scan cyclic voltammetry,Chemical Engineering Journal Advances,Jurnal,,10.1016/j.ceja.2026.101356,Tidak,
+2026,Machine Learning Prediction of Light Intensity and Aeration Treatment for Microalgae-Based POME Remediation with Edge Inference Evaluation,IAICT 2026,Konferensi,,10.1109/IAICT71158.2026.11620915,Tidak,
+2026,A Lightweight Heterogeneous Data Framing Protocol for Real-Time Image and Sensor Transmission in Drone-Based Mobile IoT Systems,ICSMech 2026,Konferensi,,10.1109/ICSMech69390.2026.11647136,Tidak,
+2025,Augmented Data Low Confidence (ADLC): A Confidence-Driven Data Augmentation Framework With Ensemble Optimization,IEEE Access,Jurnal,,10.1109/ACCESS.2025.3636729,Ya,paper/adlc-2025.pdf
+2025,Metaheuristic Optimized Machine Learning for Real Time Ammonia Prediction in IoT Based POME Bioremediation Systems,BTS-I2C 2025,Konferensi,,10.1109/BTS-I2C67944.2025.11399329,Tidak,paper/metaheuristic-ammonia-pome-2025.pdf
+2025,ADASYN-GRU Approach for Enhanced Detection of Heavy Metals in Water Using Electrochemical Sensors,ICoCSETI 2025,Konferensi,,10.1109/ICoCSETI63724.2025.11018884,Ya,paper/adasyn-gru-heavy-metals-2025.pdf
+2025,Machine Learning-Based COD Prediction Enhancement in Microalgae Cultivation with POME Using Imputation Techniques,BTS-I2C 2025,Konferensi,,10.1109/BTS-I2C67944.2025.11399363,Tidak,paper/cod-prediction-microalgae-pome-2025.pdf
+2025,Analysis of Pollutant Exposure and Toxicological Risk in Aquatic Species Using Knowledge Graphs with Louvain Community Detection,BTS-I2C 2025,Konferensi,,10.1109/BTS-I2C67944.2025.11399323,Tidak,
+2025,Enhancing Machine Learning Classification of Cadmium and Lead Using DWT Adaptive Filter Based Artifact Reduction,ICAITech 2025,Konferensi,,10.1109/ICAITech66481.2025.11387248,Tidak,paper/dwt-adaptive-filter-cd-pb-2025.pdf
+2025,Voltammetry Data for Aquatic Pollutants Detection,"ICoCSETI, Jakarta",Konferensi,Pembicara,10.1109/ICoCSETI63724.2025.11019150,Tidak,paper/voltammetry-dimensionality-reduction-2025.pdf
+2025,Water Quality Sensor Noise Classification based on Drone Movement,"ICoCSETI, Jakarta",Konferensi,Peserta,10.1109/ICoCSETI63724.2025.11019111,Tidak,paper/water-quality-sensor-noise-drone-2025.pdf
+2025,Integrating Potentiostat Measurements and Ensemble Learning,"IES, Surabaya",Konferensi,Peserta,10.1109/IES67184.2025.11161184,Tidak,paper/potentiostat-ensemble-learning-2025.pdf
+2024,Clustering Sensor Array - Palm Oil VOC,"ICITEE, Bali",Konferensi,Pembicara,10.1109/ICITEE62483.2024.10808827,Ya,paper/clustering-sensor-array-palm-oil-2024.pdf
+2024,Classification-Based Authentication of Cooking Oil Using Electronic Nose,"BTS-I2C, Jember",Konferensi,Peserta,10.1109/BTS-I2C63534.2024.10941862,Tidak,paper/cooking-oil-authentication-enose-2024.pdf
+2024,Optimizing Heavy Metal Detection - DNN + GMM,"BTS-I2C, Jember",Konferensi,Peserta,10.1109/BTS-I2C63534.2024.10941846,Tidak,paper/dnn-gmm-heavy-metal-2024.pdf
+2024,Deep Neural Network (DNN) for Outlier Detection in Heavy Metal Voltammetric Data,"BTS-I2C, Jember",Konferensi,Peserta,10.1109/BTS-I2C63534.2024.10942294,Tidak,paper/dnn-outlier-heavy-metal-2024.pdf
+2024,Lead (Pb) Contaminant Measurement on Distilled Water Using Hybrid Sensors and Linear Regression,"BTS-I2C, Jember",Konferensi,Peserta,10.1109/BTS-I2C63534.2024.10942213,Tidak,paper/lead-contaminant-hybrid-sensors-2024.pdf
+2023,K-means Feature Selection for Agile User Stories,"ICMERALDA, Karawang",Konferensi,Pembicara,10.1109/ICMERALDA60125.2023.10458165,Tidak,
+2023,Filter Validation - Photoplethysmograph Outliers,"ICAIIC, Bali",Konferensi,Pembicara,10.1109/ICAIIC57133.2023.10067110,Ya,paper/filter-validation-ppg-outliers-2023.pdf
+2023,Feature Selection of Photoplethysmograph Data in Machine Learning,"ICAIIC, Bali",Konferensi,Peserta,10.1109/ICAIIC57133.2023.10067116,Tidak,paper/feature-selection-ppg-2023.pdf
+2023,Clustering of Photoplethysmography Data Signals for Developing Noise Filters,"ICAIIC, Bali",Konferensi,Peserta,10.1109/ICAIIC57133.2023.10066966,Tidak,paper/clustering-ppg-noise-filter-2023.pdf

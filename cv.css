@@ -43,6 +43,7 @@ body {
 }
 
 .toolbar-variant {
+  display: inline-block;
   background: none;
   border: none;
   border-radius: 6px;
@@ -51,6 +52,8 @@ body {
   font-size: 0.82rem;
   font-weight: 600;
   color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -212,6 +215,86 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
   .sheet { width: 100%; min-height: 0; padding: 8mm; }
   .cv-cols { columns: 1; }
 }
+
+.rh-title {
+  text-align: center;
+  color: var(--cv-navy);
+  font-size: 14pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6mm;
+}
+
+.rh-section { margin-bottom: 5mm; }
+
+.rh-section > h2 {
+  color: var(--cv-navy);
+  font-size: 10.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2mm;
+}
+
+.rh-identitas { border-collapse: collapse; font-size: 9pt; }
+
+.rh-identitas th {
+  text-align: left;
+  font-weight: 400;
+  padding: 0.6mm 0;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 42mm;
+}
+
+.rh-identitas th::after { content: " :"; }
+
+.rh-identitas td { padding: 0.6mm 0 0.6mm 3mm; vertical-align: top; }
+
+.rh-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+  table-layout: fixed;
+}
+
+.rh-table th, .rh-table td {
+  border: 0.5pt solid #7d8598;
+  padding: 1.2mm 1.6mm;
+  vertical-align: top;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.rh-table thead th {
+  background: #eef1f7;
+  font-weight: 700;
+  color: var(--cv-text);
+}
+
+.rh-table tbody tr { break-inside: avoid; }
+
+.rh-catatan {
+  font-size: 8pt;
+  color: var(--cv-dim);
+  font-style: italic;
+  margin-top: 1.5mm;
+}
+
+.rh-sign { margin-top: 6mm; break-inside: avoid; }
+
+.rh-pernyataan { font-size: 9pt; margin-bottom: 5mm; }
+
+.rh-sign-block {
+  width: 70mm;
+  margin-left: auto;
+  font-size: 9pt;
+}
+
+.rh-sign-space { height: 18mm; }
+
+.rh-sign-name { font-weight: 700; }
 
 @page {
   size: A4;
