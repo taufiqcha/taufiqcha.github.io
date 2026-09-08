@@ -333,10 +333,16 @@ h2 {
 .pub-list-compact { list-style: none; }
 
 .pub-list-compact li {
-  padding: 0.6rem 0;
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  column-gap: 1.25rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
   border-bottom: 1px solid var(--border);
   font-size: 0.85rem;
 }
+
+.pub-list-compact li.data-loading { display: block; }
 
 .pub-list-compact li:last-child { border-bottom: none; }
 
@@ -358,9 +364,22 @@ h2 {
 .pub-pdf:hover { filter: brightness(1.08); text-decoration: none !important; }
 .pub-list-compact .pub-title { font-weight: 600; }
 
-.pub-list-compact .pub-year { color: var(--accent); font-weight: 600; font-size: 0.78rem; margin-right: 0.5rem; }
-.pub-list-compact .pub-title { display: block; margin: 0.15rem 0; }
-.pub-list-compact .pub-venue { color: var(--text-dim); font-size: 0.78rem; font-style: italic; }
+.pub-list-compact .pub-year {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.pub-list-compact .pub-title { grid-column: 2; margin-bottom: 0.15rem; }
+
+.pub-list-compact .pub-venue {
+  grid-column: 2;
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-style: italic;
+}
 
 .card-list-compact { display: flex; flex-direction: column; gap: 0.6rem; }
 
