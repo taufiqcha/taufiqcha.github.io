@@ -271,16 +271,44 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
   background: #eef1f7;
   font-weight: 700;
   color: var(--cv-text);
+  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 .rh-table tbody tr { break-inside: avoid; }
 
-.rh-catatan {
-  font-size: 8pt;
-  color: var(--cv-dim);
-  font-style: italic;
-  margin-top: 1.5mm;
-}
+.rh-table td:first-child { white-space: nowrap; }
+.rh-t-mengajar td:first-child { white-space: normal; }
+
+.rh-t-pendidikan th:nth-child(1) { width: 17%; }
+.rh-t-pendidikan th:nth-child(2) { width: 15%; }
+.rh-t-pendidikan th:nth-child(3) { width: 38%; }
+
+.rh-t-mengajar th:nth-child(1) { width: 30%; }
+.rh-t-mengajar th:nth-child(2) { width: 14%; }
+.rh-t-mengajar th:nth-child(3) { width: 41%; }
+
+.rh-t-penelitian th:nth-child(1) { width: 7%; }
+.rh-t-penelitian th:nth-child(2) { width: 42%; }
+.rh-t-penelitian th:nth-child(3) { width: 13%; }
+.rh-t-penelitian th:nth-child(4) { width: 22%; }
+
+.rh-t-jurnal th:nth-child(1) { width: 7%; }
+.rh-t-jurnal th:nth-child(2) { width: 66%; }
+
+.rh-t-konferensi th:nth-child(1) { width: 9%; }
+.rh-t-konferensi th:nth-child(2) { width: 41%; }
+.rh-t-konferensi th:nth-child(3) { width: 33%; }
+
+.rh-t-penghargaan th:nth-child(1) { width: 8%; }
+.rh-t-penghargaan th:nth-child(2) { width: 62%; }
+
+.rh-t-hki th:nth-child(1) { width: 7%; }
+.rh-t-hki th:nth-child(2) { width: 59%; }
+.rh-t-hki th:nth-child(3) { width: 21%; }
+
+.rh-t-organisasi th:nth-child(1) { width: 8%; }
+.rh-t-organisasi th:nth-child(2) { width: 62%; }
 
 .rh-sign { margin-top: 6mm; break-inside: avoid; }
 
