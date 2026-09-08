@@ -16,12 +16,20 @@ fetch(SHEETS_CONFIG.publikasi)
   })
   .then(text => {
     const rows = parseCSV(text).sort((a, b) => (b.Tahun || "").localeCompare(a.Tahun || ""));
-    document.getElementById("cv-pub-list").innerHTML = rows.map(renderCvPub).join("");
-    document.getElementById("cv-pub-count").textContent = `(${rows.length} publikasi)`;
+    const jurnal = rows.filter(r => (r.Jenis || "").toLowerCase().startsWith("j"));
+    const konferensi = rows.filter(r => !(r.Jenis || "").toLowerCase().startsWith("j"));
+
+    const grup = (label, daftar) => daftar.length
+      ? `<h3 class="cv-subhead">${label} <span class="cv-count">(${daftar.length})</span></h3>
+         <ol class="cv-pub">${daftar.map(renderCvPub).join("")}</ol>`
+      : "";
+
+    document.getElementById("cv-pub-groups").innerHTML =
+      grup("Jurnal", jurnal) + grup("Konferensi", konferensi);
   })
   .catch(err => {
-    document.getElementById("cv-pub-list").innerHTML =
-      `<li class="cv-loading">Gagal memuat data publikasi.</li>`;
+    document.getElementById("cv-pub-groups").innerHTML =
+      `<p class="cv-loading">Gagal memuat data publikasi.</p>`;
     console.error("Gagal memuat publikasi:", err);
   });
 
