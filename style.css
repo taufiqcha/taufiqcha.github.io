@@ -265,9 +265,14 @@ img { max-width: 100%; }
 
 .ig-btn:hover { background: var(--navy); color: #fff; }
 
+.ig-btn-primary { background: var(--navy); color: #fff; }
+.ig-btn-primary:hover { background: var(--navy-dark); color: #fff; }
+
 @media (prefers-color-scheme: dark) {
   .ig-btn { border-color: var(--yellow); color: var(--yellow); }
   .ig-btn:hover { background: var(--yellow); color: #1a1200; }
+  .ig-btn-primary { background: var(--yellow); color: #1a1200; }
+  .ig-btn-primary:hover { filter: brightness(1.08); background: var(--yellow); color: #1a1200; }
 }
 
 .block-gap { margin-top: 2.5rem; }
