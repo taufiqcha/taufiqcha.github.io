@@ -46,7 +46,7 @@ function renderPubItem(row) {
     : "";
   const file = (row.File || row.file || "").trim();
   const fileLink = file
-    ? ` &middot; <a href="${escapeHtml(file)}" target="_blank" rel="noopener">Unduh PDF</a>`
+    ? ` <a href="${escapeHtml(file)}" target="_blank" rel="noopener" class="pub-pdf">PDF</a>`
     : "";
   return `<li>
     <span class="pub-year">${escapeHtml(row.Tahun)}</span>
@@ -77,7 +77,10 @@ function loadPublikasi() {
 
       if (lainnya.length) {
         lainnyaEl.innerHTML = lainnya.map(renderPubItem).join("");
-        summaryEl.textContent = `Publikasi lainnya (${lainnya.length})`;
+        const berkas = lainnya.filter(r => (r.File || r.file || "").trim()).length;
+        summaryEl.textContent = berkas
+          ? `Publikasi lainnya (${lainnya.length}, ${berkas} dengan PDF)`
+          : `Publikasi lainnya (${lainnya.length})`;
         lainnyaWrap.style.display = "";
       }
     })
