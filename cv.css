@@ -34,6 +34,37 @@ body {
 
 .toolbar-back:hover { text-decoration: underline; }
 
+.toolbar-variants {
+  display: flex;
+  gap: 0;
+  background: rgba(255,255,255,0.18);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.toolbar-variant {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toolbar-variant[aria-pressed="true"] {
+  background: #fff;
+  color: #123a7a;
+}
+
+body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
+
+.cv-source { list-style: none; margin-left: -5mm; font-size: 8pt; }
+
+.cv-source a { color: var(--cv-navy); }
+
 .toolbar-print {
   background: #f5b400;
   color: #1a1200;

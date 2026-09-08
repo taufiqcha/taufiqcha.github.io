@@ -11,6 +11,12 @@
 
 <div class="toolbar">
   <a href="index.html" class="toolbar-back">&larr; Kembali ke situs</a>
+
+  <div class="toolbar-variants" role="group" aria-label="Pilih versi CV">
+    <button type="button" class="toolbar-variant" data-versi="akademik">CV Akademik</button>
+    <button type="button" class="toolbar-variant" data-versi="kegiatan">CV + Kegiatan</button>
+  </div>
+
   <button type="button" id="btn-print" class="toolbar-print">Simpan sebagai PDF</button>
 </div>
 
@@ -251,6 +257,14 @@
         <span class="cv-when">2019</span>
       </div>
       <ul><li>Mengembangkan database untuk sistem informasi aplikasi</li></ul>
+    </div>
+  </section>
+
+  <section class="cv-section cv-only-kegiatan" id="cv-kegiatan">
+    <h2>Kegiatan</h2>
+
+    <div id="cv-kegiatan-list">
+      <p class="cv-loading">Memuat data kegiatan&hellip;</p>
     </div>
   </section>
 
