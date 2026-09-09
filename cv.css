@@ -248,9 +248,9 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
   width: 42mm;
 }
 
-.rh-identitas th::after { content: " :"; }
+.rh-identitas td { padding: 0.6mm 0 0.6mm 1.4mm; vertical-align: top; }
 
-.rh-identitas td { padding: 0.6mm 0 0.6mm 3mm; vertical-align: top; }
+.rh-identitas .rh-titik { width: 2mm; padding-left: 0; }
 
 .rh-table {
   width: 100%;
@@ -296,9 +296,7 @@ body:not(.versi-kegiatan) .cv-only-kegiatan { display: none; }
 .rh-t-jurnal th:nth-child(1) { width: 7%; }
 .rh-t-jurnal th:nth-child(2) { width: 66%; }
 
-.rh-t-konferensi th:nth-child(1) { width: 9%; }
-.rh-t-konferensi th:nth-child(2) { width: 41%; }
-.rh-t-konferensi th:nth-child(3) { width: 33%; }
+.rh-t-konferensi th:nth-child(1) { width: 10%; }
 
 .rh-t-penghargaan th:nth-child(1) { width: 8%; }
 .rh-t-penghargaan th:nth-child(2) { width: 62%; }

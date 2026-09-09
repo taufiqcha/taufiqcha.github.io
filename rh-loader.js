@@ -12,14 +12,11 @@ function barisJurnal(row) {
 }
 
 function barisKonferensi(row) {
-  const { nama, kota } = pisahVenue(row.Venue);
+  const { kota } = pisahVenue(row.Venue);
   const tahun = kota ? `${escapeHtml(row.Tahun)}<br>${escapeHtml(kota)}` : escapeHtml(row.Tahun);
-  const peran = (row.Peran || "").trim();
   return `<tr>
     <td>${tahun}</td>
     <td>${escapeHtml(row.Judul)}</td>
-    <td>${escapeHtml(nama)}</td>
-    <td>${peran ? escapeHtml(peran) : "-"}</td>
   </tr>`;
 }
 
@@ -40,7 +37,7 @@ fetch(SHEETS_CONFIG.publikasi)
     document.getElementById("rh-jurnal").innerHTML =
       `<tr><td colspan="3" class="cv-loading">Gagal memuat data publikasi.</td></tr>`;
     document.getElementById("rh-konferensi").innerHTML =
-      `<tr><td colspan="4" class="cv-loading">Gagal memuat data konferensi.</td></tr>`;
+      `<tr><td colspan="2" class="cv-loading">Gagal memuat data konferensi.</td></tr>`;
     console.error("Gagal memuat publikasi:", err);
   });
 
